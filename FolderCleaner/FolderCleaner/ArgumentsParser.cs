@@ -79,7 +79,7 @@ namespace BenProjects
                         }
 
                         parameter = null;
-                        break;
+                        break; 
                 }
             }
             // In case a parameter is still waiting
