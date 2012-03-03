@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<customers>
+  <customer id="84">
+    <name value="Sample Name" />
+    <age value="23" />
+    <location>
+      <city value="Los Angeles" />
+      <state value="CA" />
+    </location>
+  </customer>
+
+  <customer id="89">
+    <name value="Sample Name 2" />
+    <age value="31" />
+    <location>
+      <city value="Wichita" />
+      <state value="KS" />
+    </location>
+  </customer>
+
+  <customer id="80">
+    <name value="Sample Name 3" />
+    <age value="41" />
+    <location>
+      <city value="Seattle" />
+      <state value="WA" />
+    </location>
+  </customer>
+</customers>

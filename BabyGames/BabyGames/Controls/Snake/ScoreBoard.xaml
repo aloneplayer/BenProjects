@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="BabyGames.Controls.ScoreBoard"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="300">
+    <Grid x:Name="Laybout">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80" />
+            <ColumnDefinition Width="80" />
+            <ColumnDefinition Width="80" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="80" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.Column="0">
+            <TextBlock Text="FPS: " Style="{StaticResource LabelText}"/>
+            <TextBlock x:Name="TextBox_FPS" Text="0" Style="{StaticResource LabelText}"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Column="1">
+            <TextBlock Text="等级: " Style="{StaticResource LabelText}"/>
+            <TextBlock x:Name="TextBox_Level" Text="1" Style="{StaticResource LabelText}"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Column="2">
+            <TextBlock Text="得分: " Style="{StaticResource LabelText}"/>
+            <TextBlock x:Name="TextBox_Score" Text="0" Style="{StaticResource LabelText}"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="4">
+            <TextBlock Text="食量: " Style="{StaticResource LabelText}"/>
+            <TextBlock x:Name="TextBlock_CurrentEaten" Text="0" Style="{StaticResource LabelText}"/>
+            <TextBlock Text="/" Style="{StaticResource LabelText}"/>
+            <TextBlock x:Name="TextBox_Capacity" Text="5" Style="{StaticResource LabelText}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,36 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>table</Title>
+    <Author>Microsoft Corporation</Author>
+    <Shortcut>table</Shortcut>
+    <Description>Markup snippet for a table</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+      <SnippetType>SurroundsWith</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>border</ID>
+        <ToolTip>border</ToolTip>
+        <Default>0</Default>
+      </Literal>
+      <Literal>
+        <ID>cellpadding</ID>
+        <ToolTip>cellpadding</ToolTip>
+        <Default>0</Default>
+      </Literal>
+      <Literal>
+        <ID>cellspacing</ID>
+        <ToolTip>cellspacing</ToolTip>
+        <Default>0</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="html"><![CDATA[<table border="$border$" cellpadding="$cellpadding$" cellspacing="$cellspacing$">
+    <tr>
+        <td>$selected$$end$</td>
+    </tr>
+</table>]]></Code>
+  </Snippet>
+</CodeSnippet>

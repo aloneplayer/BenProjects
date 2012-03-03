@@ -1,0 +1,18 @@
+﻿<navigation:Page x:Class="BabyGames.Views.MathShooter" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           xmlns:customcontrol="clr-namespace:BabyGames.Controls.MathShooter"
+           d:DesignWidth="800" d:DesignHeight="600"
+           Title="算数神枪手" Background="Blue" Loaded="Page_Loaded">
+    <Canvas x:Name="GameCarrier" Background="Transparent" Width="800" Height="600" MouseMove="Page_MouseMove" MouseLeftButtonDown="Page_MouseLeftButtonDown" MouseLeftButtonUp="Page_MouseLeftButtonUp">
+        <customcontrol:Background />
+        <customcontrol:Crosshair x:Name="Crosshair" />
+        <!--背景音乐-->
+        <MediaElement x:Name="sound_BG" Source="/Sound/bg.mp3" AutoPlay="True" MediaEnded="sound_BG_MediaEnded"  />
+
+    </Canvas>
+</navigation:Page>

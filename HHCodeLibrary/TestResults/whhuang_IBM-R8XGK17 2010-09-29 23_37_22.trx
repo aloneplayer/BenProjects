@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="b4d768eb-bfaa-4f7b-ae6e-ad713adce0ef" name="whhuang@IBM-R8XGK17 2010-09-29 23:37:22" runUser="IBM-R8XGK17\whhuang" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="67828d13-2b45-447e-b94e-f5e356825e34">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="whhuang_IBM-R8XGK17 2010-09-29 23_37_22">
+      <DeploymentItem filename="C:\_Huang\MyLibrary\HHCodeLibrary\HHCodeLibrary\bin\Debug\HHCodeLibrary.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2010-09-29T23:37:22.0937500+08:00" queuing="2010-09-29T23:37:23.0937500+08:00" start="2010-09-29T23:37:23.1562500+08:00" finish="2010-09-29T23:37:24.0156250+08:00" />
+  <ResultSummary outcome="Inconclusive">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="1" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="WriteCustomEventTest" storage="c:\_huang\mylibrary\hhcodelibrary\hhcodelibrary.test\bin\debug\hhcodelibrary.test.dll" id="b5a5b4bc-28f3-9758-debc-8ad781663c6c">
+      <Execution id="19c77dcc-8ead-4516-87ce-aca533175d6d" />
+      <TestMethod codeBase="C:/_Huang/MyLibrary/HHCodeLibrary/HHCodeLibrary.Test/bin/Debug/HHCodeLibrary.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="HHCodeLibrary.Test.EventLogHelperTest, HHCodeLibrary.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WriteCustomEventTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="b5a5b4bc-28f3-9758-debc-8ad781663c6c" executionId="19c77dcc-8ead-4516-87ce-aca533175d6d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="19c77dcc-8ead-4516-87ce-aca533175d6d" testId="b5a5b4bc-28f3-9758-debc-8ad781663c6c" testName="WriteCustomEventTest" computerName="IBM-R8XGK17" duration="00:00:00.2620827" startTime="2010-09-29T23:37:23.1875000+08:00" endTime="2010-09-29T23:37:23.9218750+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="19c77dcc-8ead-4516-87ce-aca533175d6d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   at HHCodeLibrary.Test.EventLogHelperTest.WriteCustomEventTest() in C:\_Huang\MyLibrary\HHCodeLibrary\HHCodeLibrary.Test\EventLogHelperTest.cs:line 79
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

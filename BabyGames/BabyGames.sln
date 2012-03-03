@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BabyGames", "BabyGames\BabyGames.csproj", "{4DBB1574-BCAD-49CE-8E53-050F1DFA7E03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BabyGames.Web", "BabyGames.Web\BabyGames.Web.csproj", "{184378F2-5F9A-4B3C-B979-5F8F0B1FE028}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DBB1574-BCAD-49CE-8E53-050F1DFA7E03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DBB1574-BCAD-49CE-8E53-050F1DFA7E03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DBB1574-BCAD-49CE-8E53-050F1DFA7E03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DBB1574-BCAD-49CE-8E53-050F1DFA7E03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{184378F2-5F9A-4B3C-B979-5F8F0B1FE028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{184378F2-5F9A-4B3C-B979-5F8F0B1FE028}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{184378F2-5F9A-4B3C-B979-5F8F0B1FE028}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{184378F2-5F9A-4B3C-B979-5F8F0B1FE028}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

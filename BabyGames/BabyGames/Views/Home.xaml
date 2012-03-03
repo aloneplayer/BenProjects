@@ -1,0 +1,40 @@
+﻿<navigation:Page x:Class="BabyGames.Home" 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+    mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="480"
+    Title="好多好玩小游戏"
+    Style="{StaticResource PageStyle}">
+
+    <Grid x:Name="LayoutRoot" VerticalAlignment="Top" HorizontalAlignment="Left" ShowGridLines="True" >
+        <ScrollViewer x:Name="PageScrollViewer" Style="{StaticResource PageScrollViewerStyle}">
+            <Grid x:Name="ContentGrid">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <ContentControl Style="{StaticResource LogoIcon}" Grid.Column="0" Grid.Row="0"/>
+                <HyperlinkButton Grid.Column="1" Grid.Row="0" Click="NavigateButton_Click" NavigateUri="/MathLinking" Tag="MathLining" Content="算术连连看" FontSize="20" />
+              
+                <ContentControl Style="{StaticResource LogoIcon}" Grid.Column="0" Grid.Row="1"/>
+                <HyperlinkButton Grid.Column="1" Grid.Row="1" Click="NavigateButton_Click" NavigateUri="/Snake" Tag="贪吃蛇" Content="小贪吃" FontSize="20" />
+               
+                <ContentControl Style="{StaticResource LogoIcon}" Grid.Column="0" Grid.Row="2"/>
+                <HyperlinkButton Grid.Column="1" Grid.Row="2" Click="NavigateButton_Click" NavigateUri="/Tetris" Tag="俄罗斯方块" Content="俄罗斯方块" FontSize="20" />
+
+                <ContentControl Style="{StaticResource LogoIcon}" Grid.Column="0" Grid.Row="3"/>
+                <HyperlinkButton Grid.Column="1" Grid.Row="3" Click="NavigateButton_Click" NavigateUri="/MathShooter" Tag="算数神枪手" Content="算数神枪手" FontSize="20" />
+
+            </Grid>
+
+        </ScrollViewer>
+    </Grid>
+
+</navigation:Page>

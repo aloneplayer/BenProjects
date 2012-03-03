@@ -1,0 +1,36 @@
+﻿<controls:ChildWindow x:Class="BabyGames.Controls.GameSplashDialog"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           Width="400" Height="300" 
+           Title="乐乐小游戏" FontSize="15">
+    <Grid x:Name="LayoutRoot" Margin="2" Cursor="Hand">
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="textBlock_GameName" Foreground="#18ADCB" FontSize="55" FontWeight="Bold" TextAlignment="Center" Grid.Row="0">
+            <TextBlock.Effect>
+                <DropShadowEffect BlurRadius="5" Color="Blue" Direction="315" Opacity="1" ShadowDepth="5" />
+            </TextBlock.Effect>
+        </TextBlock>
+
+        <Button x:Name="button_Start" Grid.Row="1" Click="button_Start_Click">
+            <TextBlock Text="开 始 游 戏" Foreground="#024390" FontSize="24" FontWeight="Bold" TextAlignment="Center" >
+            <TextBlock.Effect>
+                <BlurEffect Radius="2" />
+            </TextBlock.Effect>
+            </TextBlock>
+        </Button>
+
+        <Grid Background="#FFFFE1" Opacity="0.85" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="3">
+            <StackPanel>
+                <TextBlock x:Name="textBlock_Help" Text="版本：0.1" Margin="2" />
+
+            </StackPanel>
+        </Grid>
+    </Grid>
+</controls:ChildWindow>
