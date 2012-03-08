@@ -200,7 +200,11 @@ namespace BenProjects
             {
                 try
                 {
+<<<<<<< HEAD
                     if (fi is FileInfo)
+=======
+                    if (fi is FieldInfo)
+>>>>>>> 85956b81fde95a8e06293de42ad7b40e73f26f1f
                     {
                         File.Delete(fi.FullName);
                     }
