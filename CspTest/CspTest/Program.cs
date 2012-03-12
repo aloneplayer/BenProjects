@@ -9,8 +9,11 @@ namespace BenCspTest
     {
         static void Main(string[] args)
         {
-            InheritanceTester.TestCase1();
+            //InheritanceTester.TestCase1();
             
+            //
+            ExceptionTest.Test();
+
             Console.ReadLine();
         }
     }
