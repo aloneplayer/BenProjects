@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConstructorTest.cs" />
+    <Compile Include="ExceptionTest.cs" />
     <Compile Include="InheritanceTest.cs" />
     <Compile Include="InterfaceTest.cs" />
     <Compile Include="Program.cs" />
