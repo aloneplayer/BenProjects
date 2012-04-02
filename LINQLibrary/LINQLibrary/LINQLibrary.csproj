@@ -62,6 +62,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DCStudent.dbml</DependentUpon>
     </Compile>
+    <Compile Include="LinqError.cs" />
     <Compile Include="LinqSamples.cs" />
     <Compile Include="LinqToSqlSample.cs" />
     <Compile Include="Product.cs" />
