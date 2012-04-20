@@ -43,6 +43,7 @@
     <Compile Include="DefaultConstructor.cs" />
     <Compile Include="ExpceptionHandling.cs" />
     <Compile Include="DI.cs" />
+    <Compile Include="ExplicitInterface.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
