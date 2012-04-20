@@ -77,5 +77,18 @@ namespace LINQLibrary.Test
             actual = target.GetSomeProduct();
             Assert.AreEqual(2, actual.Count);
         }
+
+        /// <summary>
+        ///A test for GetSomeProduct_Error
+        ///</summary>
+        [TestMethod()]
+        public void GetSomeProduct_ErrorTest()
+        {
+            LinqError target = new LinqError(); // TODO: Initialize to an appropriate value
+            //List<Product> expected = null; // TODO: Initialize to an appropriate value
+            List<Product> actual;
+            actual = target.GetSomeProduct_Error();
+            Assert.AreEqual(2, actual.Count);
+        }
     }
 }
