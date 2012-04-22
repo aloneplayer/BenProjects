@@ -23,5 +23,19 @@ namespace WpfLibrary
         {
             InitializeComponent();
         }
+
+        private void Button_ProductItemDemo_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationWindow window = new NavigationWindow();
+            window.Source = new Uri("ProductItemPage.xaml", UriKind.Relative);
+            window.Show();  
+        }
+
+        private void Button_ProductListDemo_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationWindow window = new NavigationWindow();
+            window.Source = new Uri("ProductListPage.xaml", UriKind.Relative);
+            window.Show();
+        }
     }
 }
