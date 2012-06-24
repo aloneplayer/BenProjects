@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfDataBinding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Name="stackPanel1" VerticalAlignment="Top">
+            <Button Content="Without Date Binding" Height="23" Name="button_WithoutDataBinding" Click="button_WithoutDataBinding_Click" />
+            <Button Content="Simple Data Binding 1" Height="23" Name="button_SimpleDataBinding1" Click="button_SimpleDataBinding1_Click" />
+            <Button Content="Simple Data Binding 2" Height="23" Name="button_SimpleDataBinding2" Click="button_SimpleDataBinding2_Click" />
+            <Button Content="Simple Data Binding 3" Height="23" Name="button_SimpleDataBinding3" Click="button_SimpleDataBinding3_Click" />
+            <Button Content="Data Binding to Resource" Height="23" Name="button_DataBindingToResource" Click="button_DataBindingToResource_Click" />
+            <Button Content="Data Binding to Explicit Data Source" Height="23" Name="button_DataBindingToExplicitSource" Click="button_DataBindingToExplicitSource_Click" />
+            <Button Content="ValueConverter" Height="23" Name="button_ValueConverter" Click="button_ValueConverter_Click" />
+            <Button Content="Binding to List" Height="23" Name="button_BindToList" Click="button_BindToList_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
