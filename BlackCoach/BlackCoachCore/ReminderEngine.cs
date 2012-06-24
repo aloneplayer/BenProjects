@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace BlackCoachCore
+namespace BlackCoach.Core
 {
     public class ReminderEngine
     {
+        private IRemindRepository remindRepository;
+
         private State _engineState;
 
         public enum State

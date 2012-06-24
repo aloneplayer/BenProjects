@@ -8,12 +8,12 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
+using BlackCoach.Core.Enums;
 
-namespace BlackCoachCore
+namespace BlackCoach.Core
 {
-    public class Exercise : IExercise, IRemind
+    public class Exercise : ITask
     {
-
         public string Title
         {
             get
@@ -26,84 +26,7 @@ namespace BlackCoachCore
             }
         }
 
-        public DateTime Time
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public bool Enabled
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public BlackCoach.Core.Enums.RemindMethod RemindMethod
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public int MaxDelayTimes
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public int DelayTimes
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public bool IsDone
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
         public void Execute()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Delay()
         {
             throw new NotImplementedException();
         }

@@ -53,8 +53,10 @@
     <Compile Include="Enums\RemindMethod.cs" />
     <Compile Include="Enums\RemindState.cs" />
     <Compile Include="Exercise.cs" />
-    <Compile Include="IExercise.cs" />
+    <Compile Include="FakeRemindRepository.cs" />
     <Compile Include="IRemind.cs" />
+    <Compile Include="IRemindRepository.cs" />
+    <Compile Include="ITask.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReminderEngine.cs" />
   </ItemGroup>

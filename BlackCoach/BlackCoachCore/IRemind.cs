@@ -10,7 +10,7 @@ using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using BlackCoach.Core.Enums;
 
-namespace BlackCoachCore
+namespace BlackCoach.Core
 {
     public interface IRemind
     {
@@ -48,5 +48,7 @@ namespace BlackCoachCore
         void Execute();
 
         void Delay();
+
+        ITask Task { get; set; }
     }
 }

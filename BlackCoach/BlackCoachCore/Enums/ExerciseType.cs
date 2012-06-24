@@ -9,6 +9,7 @@ namespace BlackCoach.Core.Enums
     public enum ExerciseType
     {
         Times = 0,
-        Seconds
+        Seconds,
+        PlayAudio
     }
 }
