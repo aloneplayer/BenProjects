@@ -49,6 +49,7 @@
     <Reference Include="mscorlib.extensions" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ViewModelCommand.cs" />
     <Compile Include="Enums\ExerciseType.cs" />
     <Compile Include="Enums\RemindMethod.cs" />
     <Compile Include="Enums\RemindState.cs" />

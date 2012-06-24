@@ -66,25 +66,26 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GamePage.xaml.cs">
-      <DependentUpon>GamePage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MainPage.xaml.cs">
+    <Compile Include="ViewModels\MainPageViewModel.cs" />
+    <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AppServiceProvider.cs" />
+    <Compile Include="Views\NewExercisePage.xaml.cs">
+      <DependentUpon>NewExercisePage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
-    <Page Include="GamePage.xaml">
+    <Page Include="Views\MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainPage.xaml">
+    <Page Include="Views\NewExercisePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -103,6 +104,10 @@
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\BlackCoachCore\BlackCoach.Core.csproj">
+      <Project>{B1CFB7B3-959B-4E27-8DF0-5651C8C2B0EC}</Project>
+      <Name>BlackCoach.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BlackCoachLib\BlackCoachLib.csproj">
       <Name>BlackCoachLib</Name>
     </ProjectReference>

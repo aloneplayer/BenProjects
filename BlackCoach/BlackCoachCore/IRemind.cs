@@ -14,11 +14,13 @@ namespace BlackCoach.Core
 {
     public interface IRemind
     {
+        string Title { get; set; }
         /// <summary>
         /// 何时提醒
         /// </summary>
-        DateTime Time { get; set; }
+        int Hour { get; set; }
 
+        int Minut { get; set; }
         /// <summary>
         /// 是否工作
         /// </summary>

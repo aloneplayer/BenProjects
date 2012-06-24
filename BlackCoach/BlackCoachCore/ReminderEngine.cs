@@ -58,7 +58,7 @@ namespace BlackCoach.Core
         {
             DateTime currentTime = DateTime.Now;
             var query = from remind in RemindList
-                        where (remind.Time > currentTime && !remind.IsDone)
+                        where (remind.Hour == currentTime.Hour && remind.Minut == currentTime.Minute && !remind.IsDone)
                         select remind;
 
             IRemind currentRemind = query.FirstOrDefault<IRemind>();
