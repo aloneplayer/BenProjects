@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "MultiFileUploadWithUploadify";
+}
+<h2>
+    MultiFileUploadWithUploadify</h2>
+<script src="@Url.Content("~/Scripts/ThirdPartyLib/jquery-1.7.2.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/ThirdPartyLib/jquery.uploadify-3.1.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/MultiFileUploadWithUploadify.js")" type="text/javascript"></script>
+<input type="file" name="files" id="myfileupload" />
+<p>
+    <a href="javascript:$('#myfileupload').uploadify('upload')">Upload Files</a>
+</p>

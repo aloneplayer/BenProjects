@@ -1,0 +1,135 @@
+﻿@charset 'UTF-8';
+/*
+ * jQuery File Upload UI Plugin CSS 6.3
+ * https://github.com/blueimp/jQuery-File-Upload
+ *
+ * Copyright 2010, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+ 
+.btn {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 4px 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.btn-success {
+    background-color: #5BB75B;
+    background-image: -moz-linear-gradient(center top , #62C462, #51A351);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+        color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  margin-right: 4px;
+}
+
+
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  border: solid transparent;
+  border-width: 0 0 100px 200px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -moz-transform: translate(-300px, 0) scale(4);
+  direction: ltr;
+  cursor: pointer;
+}
+
+
+.fileupload-buttonbar .btn,
+.fileupload-buttonbar .toggle {
+  margin-bottom: 5px;
+}
+.files .progress {
+  width: 200px;
+}
+.progress-animated .bar {
+  background: url(../img/progressbar.gif) !important;
+  filter: none;
+}
+.fileupload-loading {
+  position: absolute;
+  left: 50%;
+  width: 128px;
+  height: 128px;
+  background: url(../img/loading.gif) center no-repeat;
+  display: none;
+}
+
+.fileupload-processing .fileupload-loading {
+  display: block;
+}
+
+/* Fix for IE 6: */
+*html .fileinput-button {
+  line-height: 22px;
+  margin: 1px -3px 0 0;
+}
+
+/* Fix for IE 7: */
+*+html .fileinput-button {
+  margin: 1px 0 0 0;
+}
+
+@media (max-width: 480px) {
+  .files .btn span {
+    display: none;
+  }
+  .files .preview * {
+    width: 40px;
+  }
+  .files .name * {
+    width: 80px;
+    display: inline-block;
+    word-wrap: break-word;
+  }
+  .files .progress {
+    width: 20px;
+  }
+  .files .delete {
+    width: 60px;
+  }
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    vertical-align: text-top;
+    width: 14px;
+}
+
+.icon-white {
+    background-image: url("/Content/Images/glyphicons-halflings-white.png");
+}
+
+.icon-plus 
+{
+    background-position: -408px -96px;
+}

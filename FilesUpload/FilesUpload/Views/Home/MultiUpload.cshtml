@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "MultiUpload";
+}
+<label>
+    在FireFix中，如果一次上传的文件的总和大于上限（5M），连接会被reset，需要修改web.config，添加 httpRuntime maxRequestLength
+</label>
+@using (Html.BeginForm("MultiUpload", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input type="file" name="files" id="FileUpload1" />
+    <br />
+    <input type="file" name="files" id="FileUpload2" />
+    <br />
+    <input type="file" name="files" id="FileUpload3" />
+    <br />
+    <input type="submit" />
+}
