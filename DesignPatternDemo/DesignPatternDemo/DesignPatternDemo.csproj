@@ -45,20 +45,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behavioral\State\StatePattern.cs" />
+    <Compile Include="Behavioral\Strategy\StrategyPattern.cs" />
+    <Compile Include="Creational\AbstractFactory\AbstractFactoryPattern.cs" />
+    <Compile Include="Creational\Builder\BuilderPattern.cs" />
+    <Compile Include="Creational\Factory\FactoryPattern.cs" />
+    <Compile Include="Creational\Prototype\PrototypePattern.cs" />
+    <Compile Include="Creational\Singleton\SingletonPattern.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structural\Adapter\AdapterPattern.cs" />
     <Compile Include="Structural\Bridge\BridgePattern.cs" />
     <Compile Include="Structural\Composite\CompositePattern.cs" />
     <Compile Include="Structural\Decorator\DecoratorPattern.cs" />
     <Compile Include="Structural\Decorator\PhotoDemo.cs" />
+    <Compile Include="Structural\Facade\FacadePattern.cs" />
     <Compile Include="Structural\Flyweight\BookDemo.cs" />
     <Compile Include="Structural\Flyweight\FlyweightPattern.cs" />
     <Compile Include="Structural\Proxy\SpaceBookSystem.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Behavioral\" />
-    <Folder Include="Creational\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="finger.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
