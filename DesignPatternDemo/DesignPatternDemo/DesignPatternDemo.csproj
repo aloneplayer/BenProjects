@@ -45,8 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behavioral\ChainOfResponsibility\HandlerChain.cs" />
+    <Compile Include="Behavioral\Command\CommandPattern.cs" />
+    <Compile Include="Behavioral\State\GameState.cs" />
     <Compile Include="Behavioral\State\StatePattern.cs" />
     <Compile Include="Behavioral\Strategy\StrategyPattern.cs" />
+    <Compile Include="Behavioral\TemplateMethod\TemplateMethodPattern .cs" />
     <Compile Include="Creational\AbstractFactory\AbstractFactoryPattern.cs" />
     <Compile Include="Creational\Builder\BuilderPattern.cs" />
     <Compile Include="Creational\Factory\FactoryPattern.cs" />

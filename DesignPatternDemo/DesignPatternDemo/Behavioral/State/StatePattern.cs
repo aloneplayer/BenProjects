@@ -6,7 +6,8 @@ using System.Text;
 namespace DesignPatternDemo.Behavioral.State
 {
     /// <summary>
-    /// can be seen as a dynamic version of the 
+    /// Allow an object to alter its behavior when its internal state changes.
+    /// Can be seen as a dynamic version of the 
     /// Strategy pattern. 
     /// When the state inside an object changes, it can
     /// change its behavior by switching to a set of different 
