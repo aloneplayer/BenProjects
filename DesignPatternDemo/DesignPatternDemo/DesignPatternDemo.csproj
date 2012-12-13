@@ -46,11 +46,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Behavioral\ChainOfResponsibility\HandlerChain.cs" />
+    <Compile Include="Behavioral\Command\CommandDemo.cs" />
     <Compile Include="Behavioral\Command\CommandPattern.cs" />
+    <Compile Include="Behavioral\Command\UndoDemo.cs" />
+    <Compile Include="Behavioral\Interpreter\InterpreterDemo.cs" />
+    <Compile Include="Behavioral\Iterator\IEnumerableDemo.cs" />
+    <Compile Include="Behavioral\Iterator\IteratorPattern.cs" />
+    <Compile Include="Behavioral\Mediator\ChatRoom.cs" />
+    <Compile Include="Behavioral\Mediator\MediatorPattern.cs" />
+    <Compile Include="Behavioral\Memento\MementoDemo.cs" />
+    <Compile Include="Behavioral\Observer\EventDemo.cs" />
+    <Compile Include="Behavioral\Observer\ObserverPattern.cs" />
     <Compile Include="Behavioral\State\GameState.cs" />
     <Compile Include="Behavioral\State\StatePattern.cs" />
     <Compile Include="Behavioral\Strategy\StrategyPattern.cs" />
     <Compile Include="Behavioral\TemplateMethod\TemplateMethodPattern .cs" />
+    <Compile Include="Behavioral\Visitor\BankDemo.cs" />
+    <Compile Include="Behavioral\Visitor\VisitorPattern.cs" />
+    <Compile Include="Behavioral\Visitor\VisitorStructuralExample.cs" />
     <Compile Include="Creational\AbstractFactory\AbstractFactoryPattern.cs" />
     <Compile Include="Creational\Builder\BuilderPattern.cs" />
     <Compile Include="Creational\Factory\FactoryPattern.cs" />
