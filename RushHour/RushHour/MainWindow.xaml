@@ -34,7 +34,9 @@
             <LineBreak/>
             <Run Text="Find your way out of the traffic jam" FontFamily="Comic Sans MS" FontSize="12"/>
         </TextBlock>
-        <ComboBox x:Name="cboLevel" Grid.Row="0" Grid.Column="3" VerticalAlignment="Bottom" Margin="0,0,5,10" Width="100" HorizontalAlignment="Right" >
+        <ComboBox x:Name="cboLevel" Grid.Row="0" Grid.Column="3" 
+                  VerticalAlignment="Bottom" Margin="0,0,5,10" 
+                  Width="100" HorizontalAlignment="Right">
             <ComboBoxItem Content="Level1" IsSelected="True"/>
             <ComboBoxItem Content="Level2" />
             <ComboBoxItem Content="Level3" />
@@ -48,7 +50,7 @@
         </ComboBox>
         <Grid x:Name="grid" Height="360" Width="420" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" />
         <!--canvas that the cars will be placed on-->
-         <Canvas x:Name="CarCanvas" Height="360" Width="420" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4">
+        <Canvas x:Name="CarCanvas" Height="360" Width="420" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4">
         </Canvas>
     </Grid>
 </Window>

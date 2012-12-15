@@ -37,16 +37,15 @@ namespace RushHour
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        protected override void OnActivated(EventArgs e)
-        {
-            base.OnActivated(e);
             // game related...
             AddSquares();
-            InitializeLevel("Level1");
+            this.Loaded += new RoutedEventHandler(MainWindow_Loaded);
+            this.cboLevel.SelectionChanged += this.cboLevel_SelectionChanged;
+        }
 
-            cboLevel.SelectionChanged += this.cboLevel_SelectionChanged;
+        void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            InitializeLevel("Level1");
         }
 
         /// <summary>
@@ -169,40 +168,7 @@ namespace RushHour
             c.MouseLeftButtonUp += new MouseButtonEventHandler(OnCarLeftButtonUp);
         }
 
-        void OnCarLeftButtonUp(object sender, MouseButtonEventArgs e)
-        {
-            isMouseCaptured = false;
-            Car currentCar = sender as Car;
-            currentCar.ReleaseMouseCapture();
-            //unmark previous position 
-            Mark(currentCar.Row, currentCar.Column, currentCar.Length, currentCar.Orientation, false);
-
-            if (currentCar.Orientation == Orientation.Horizontal)
-            {
-                double left = Canvas.GetLeft(currentCar);
-                int col = PosToColOrRow(left);
-                Canvas.SetLeft(currentCar, col * 60.0);
-                currentCar.Column = col;
-                if (currentCar.Column + currentCar.Length == 7)
-                {
-                    MessageBox.Show("Congratulations");
-                    WritePotentialHighScore(tbLevel.Text, moves + 1);
-                }
-            }
-            else
-            {
-                double top = Canvas.GetTop(currentCar);
-                int row = PosToColOrRow(top);
-                Canvas.SetTop(currentCar, row * 60.0);
-                currentCar.Row = row;
-            }
-
-            //mark new position
-            Mark(currentCar.Row, currentCar.Column, currentCar.Length, currentCar.Orientation, true);
-            moves++;
-            tbMoves.Text = moves.ToString();
-        }
-
+        #region Score
         void WritePotentialHighScore(string level, int moves)
         {
             return;
@@ -309,7 +275,6 @@ namespace RushHour
 
         int GetHighScore(string level)
         {
-
             XDocument doc;
             FileStream isoStream;
 
@@ -343,6 +308,17 @@ namespace RushHour
             }
 
         }
+        #endregion
+
+        #region Car drag-drop
+        void OnCarLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            isMouseCaptured = true;
+            lastPoint = e.GetPosition(CarCanvas);
+            Car currentCar = sender as Car;
+            currentCar.CaptureMouse();
+        }
+
         void OnCarMove(object sender, MouseEventArgs e)
         {
             if (isMouseCaptured)
@@ -374,14 +350,47 @@ namespace RushHour
             }
         }
 
-        void OnCarLeftButtonDown(object sender, MouseButtonEventArgs e)
+        void OnCarLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            isMouseCaptured = true;
-            lastPoint = e.GetPosition(CarCanvas);
+            isMouseCaptured = false;
             Car currentCar = sender as Car;
-            currentCar.CaptureMouse();
+            currentCar.ReleaseMouseCapture();
 
+            int previousRow = currentCar.Row;
+            int previousCol = currentCar.Column;
+            //unmark previous position 
+            Mark(currentCar.Row, currentCar.Column, currentCar.Length, currentCar.Orientation, false);
+
+            if (currentCar.Orientation == Orientation.Horizontal)
+            {
+                double left = Canvas.GetLeft(currentCar);
+                int col = PosToColOrRow(left);
+                Canvas.SetLeft(currentCar, col * 60.0);
+                currentCar.Column = col;
+                if (currentCar.Column + currentCar.Length == 7)
+                {
+                    MessageBox.Show("Congratulations");
+                    //WritePotentialHighScore(tbLevel.Text, moves + 1);
+                }
+            }
+            else
+            {
+                double top = Canvas.GetTop(currentCar);
+                int row = PosToColOrRow(top);
+                Canvas.SetTop(currentCar, row * 60.0);
+                currentCar.Row = row;
+            }
+
+            if (previousRow != currentCar.Row || previousCol != currentCar.Column)
+            {
+                //mark new position
+                Mark(currentCar.Row, currentCar.Column, currentCar.Length, currentCar.Orientation, true);
+
+                moves++;
+                tbMoves.Text = moves.ToString();
+            }
         }
+        #endregion
 
         private double GetMinX(int row, int column)
         {
