@@ -1,0 +1,54 @@
+﻿<Window x:Class="RushHour.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Rush Hour for Lily" Height="540" Width="480">
+    <Grid x:Name="LayoutRoot">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="70"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="380"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Border Background="Gray" BorderBrush="DarkGray" BorderThickness="3.0" CornerRadius="20" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="5"/>
+        <Border Background="LightGray" BorderBrush="DarkGray" BorderThickness="3.0" CornerRadius="20" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3"/>
+        <TextBlock FontFamily="Comic Sans MS" FontSize="24" Grid.Row="2" Grid.Column="1" Margin="5,0,0,0">
+            <Run Text="Level: " />
+            <Run x:Name="tbLevel" Text="1" Foreground="Blue" />
+        </TextBlock>
+        <TextBlock FontFamily="Comic Sans MS" FontSize="24" TextAlignment="Center" Grid.Row="2" Grid.Column="2">
+            <Run Text="Moves:"/>
+            <Run x:Name="tbMoves" Text="0" Foreground="Blue"/>
+        </TextBlock>
+        <TextBlock FontFamily="Comic Sans MS" FontSize="24" TextAlignment="Right" Grid.Row="2" Grid.Column="3" Margin="0,0,5,0" >
+            <Run Text="Record:"/>
+            <Run x:Name="tbBest" Text="-" Foreground="Blue"/>
+        </TextBlock>
+        <TextBlock Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Bottom" Margin="5,0,0,10">
+            <Run Text="Seattle Streets" FontFamily="Comic Sans MS" FontSize="24" />
+            <LineBreak/>
+            <Run Text="Find your way out of the traffic jam" FontFamily="Comic Sans MS" FontSize="12"/>
+        </TextBlock>
+        <ComboBox x:Name="cboLevel" Grid.Row="0" Grid.Column="3" VerticalAlignment="Bottom" Margin="0,0,5,10" Width="100" HorizontalAlignment="Right" >
+            <ComboBoxItem Content="Level1" IsSelected="True"/>
+            <ComboBoxItem Content="Level2" />
+            <ComboBoxItem Content="Level3" />
+            <ComboBoxItem Content="Level4" />
+            <ComboBoxItem Content="Level5" />
+            <ComboBoxItem Content="Level6" />
+            <ComboBoxItem Content="Level7" />
+            <ComboBoxItem Content="Level8" />
+            <ComboBoxItem Content="Level9" />
+            <ComboBoxItem Content="Level10" />
+        </ComboBox>
+        <Grid x:Name="grid" Height="360" Width="420" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" />
+        <!--canvas that the cars will be placed on-->
+         <Canvas x:Name="CarCanvas" Height="360" Width="420" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4">
+        </Canvas>
+    </Grid>
+</Window>
